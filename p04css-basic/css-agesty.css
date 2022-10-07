@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ html{
+    height: 100%;
+}
+
+.kop img {
+  width: 450px;
+  height: 80px;
+}
+.uga .judul {
+  font-size: 24px;
+  font-weight: 700px;
+  color: black;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.uga .forml {
+  width: 100%;
+}
+.uga .forml .badan {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+body {
+  background-color: rgb(173, 172, 166);
+  padding: 0 10px;
+}
+.uga {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.uga .forml .badan label {
+  width: 200px;
+  color: #757575;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.uga .forml .badan .masukan,
+.uga .forml .badan .area_huruf {
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.uga .forml .badan .area_huruf {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+.uga .forml .badan .editselect {
+  width: 100%;
+  height: 37px;
+  position: relative;
+}
+.uga .forml .badan .editselect:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+.uga .forml .badan .editselect select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px;
+  appearance: none;
+  outline: none;
+  border: 0px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+.uga .forml .badan .masukan:focus,
+.uga .forml .badan .area_huruf:focus,
+.uga .forml .badan .editselect select:focus {
+  border: 1px solid blue;
+}
+.uga .forml .badan p {
+  font-size: 14px;
+  color: #757575;
+}
+.ttd {
+  width: 150px;
+  height: 80px;
+  margin-left: 300px;
+}
+.ttd .isi_ttd {
+  margin-top: 60px;
+}
+.ttd .isi_ttd input {
+  max-width: 130px;
+}
+@media (max-width: 420px) {
+  .uga .forml .badan {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .uga .forml .badan label {
+    margin-bottom: 5px;
+  }
+
+.uga .forml .badan .check {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.uga .forml .badan .check input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.uga .forml .badan .check .tanda_ceklis {
+  width: 15px;
+  height: 15px;
+  border: 1px solid blue;
+  display: block;
+  position: relative;
+}
+.uga .forml .badan .check .tanda_ceklis:before {
+  content: "";
+  width: 5px;
+  height: 2px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.uga .forml .badan .check input[type=":checkbox"]:checked ~ .tanda_ceklis {
+  background: blue;
+}
+.uga
+  .forml
+  .badan
+  .check
+  input[type=":checkbox"]:checked
+  ~ .tanda_ceklis:before {
+  display: block;
+}
+.uga .forml .badan .btn {
+  width: 100%;
+  font-size: 15px;
+  border: 0px;
+  padding: 8px 10px;
+  background: rgb(41, 41, 128);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+}
+.uga .forml .badan .btn:hover {
+  background: rgb(61, 59, 59);
+}
+.uga .forml .badan:last-child {
+  margin-bottom: 0;
+}
+
+  img {
+    max-width: 100%;
+  }
+  .uga .forml .isibadan_1 {
+    flex-direction: row;
+  }
+  .ttd {
+    margin: 0;
+  }
+} */

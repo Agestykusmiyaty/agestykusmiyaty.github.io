@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>From PPDB</title>
+    <link rel="stylesheet" href="css-agesty.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="uga">
+      <div class="kop"><img src="kop.jpg" /></div>
+      <br />
+      <div class="judul">From PPDB STMIK IKMI CIREBON</div>
+      <div class="forml">
+        <div class="badan">
+          <label>No Pendaftaran</label>
+          <input
+            type="tel"
+            class="masukan"
+            name="nopendaftaran"
+            autofocus
+            required
+          />
+        </div>
+        <div class="badan">
+          <label>Jurusan</label>
+          <div class="editselect">
+            <select required>
+              <option value=""></option>
+              <option value="ti">Teknik Informatika (S1)</option>
+              <option value="si">Sistem Informasi</option>
+              <option value="rpl">Rekayasa Perangkat Lunak (S1)</option>
+              <option value="mi">Manajemen Informatika (D3)</option>
+              <option value="ka">Komputerisasi Akuntasi (D3)</option>
+            </select>
+          </div>
+        </div>
+        <div class="badan">
+          <label>Nama Lengkap</label>
+          <input type="text" class="masukan" name="nama lengkap" />
+        </div>
+        <div class="badan">
+          <label>NIK (KTP)</label>
+          <input type="tel" class="masukan" name="nik(ktp)" />
+        </div>
+        <div class="badan">
+          <label>Tempat Lahir</label>
+          <input type="text" class="masukan" name="tempatlahir" />
+        </div>
+        <div class="badan">
+          <label>Tanggal Lahir</label>
+          <input type="date" class="masukan" name="tempatlahir" />
+        </div>
+        <div class="badan">
+          <label>Jenis Kelamin</label>
+          <div class="editselect">
+            <select>
+              <option value=""></option>
+              <option value="laki-laki">laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+          </div>
+        </div>
+        <div class="badan">
+          <label>Email</label>
+          <input type="email" class="masukan" name="email" required />
+        </div>
+        <div class="badan">
+          <label>No hp</label>
+          <input
+            type="tel"
+            class="masukan"
+            name="nohp"
+            pattern="(\+62|62|0)8[1-9]{6,9}$"
+            placeholder="+62"
+          />
+        </div>
+        <div class="badan">
+          <label>Alamat</label>
+          <textarea class="area_huruf"></textarea>
+        </div>
+        <div class="badan">
+          <label>Kode Pos</label>
+          <input type="tel" class="masukan" name="kode post" />
+        </div>
+        <div class="ttd">
+          <label>Cirebon</label>
+          <input type="date" />
+          <div class="isi_ttd"><input type="text" placeholder="" /></div>
+        </div>
+        <br /><br />
+        <div class="isibadan_1">
+          <label class="check">
+            <input type="checkbox" />
+            <span class="tanda_ceklis"></span>
+          </label>
+          <p>*Data yang di isi sudah benar</p>
+        </div>
+        <div class="badan">
+          <button onclick="alert('Apakah Sudah Yakin')" type="submit" class="tombol">Kirim</button>
+          <button onclick="document.location.href = '../index.html'" type="button" class="tombol">Kembali</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

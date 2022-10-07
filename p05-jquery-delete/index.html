@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <title>Jquery Top 5</title>
+</head>
+    <style>
+    	html{
+    		background-color: lightpink;
+    	}
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td{
+        	background-color: lightsteelblue;
+        }
+        th, td {
+            padding: 20px;
+        }
+        th {
+            background-color: green;
+            color: white;
+        }
+		form{
+			width: 500px;
+			margin: 20px auto;
+		}
+		label,input 
+		{
+        display: block;
+        margin: 5px 0;
+        font-si: 15px;
+		}
+		button {
+        display: block;
+		}
+		.aku{
+			color: white;
+		}
+    </style>
+<body>
+    <table class="aku">
+    	<h1>Top 5 Teman</h1>
+        <tr>
+            <th rowspan="2">Teman Ikmi</th>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <th>Prodi</th>
+			<th>Aksi</th>
+        </tr>
+        <tr class="wow" id="wow__1">
+            <td class="tab" id="nama__1">Arya</td>
+            <td class="tab" id="alamat__1">Cirebon</td>
+            <td class="tab" id="prodi__1">Informatika</td>
+			<td class="tab" id="hapus__1">Hapus</td>
+        </tr>
+        <tr class="wow" id="wow__2">
+            <td class="tab" id="nama__2">Fathur</td>
+            <td class="tab" id="alamat__2">Cirebon</td>
+            <td class="tab" id="prodi__2">Informatika</td>
+			<td class="tab" id="hapus__2">Hapus</td>
+        </tr>
+        <tr class="wow"  id="wow__3" >
+            <td class="tab" id="nama__3">Rizki</td>
+            <td class="tab" id="alamat__3">Cirebon</td>
+            <td class="tab" id="prodi__3">Informatika</td>
+			<td class="tab" id="hapus__3">Hapus</td>
+        </tr>
+		<tr class="wow" id="wow__4">
+            <td class="tab" id="nama__4">Salman</td>
+            <td class="tab" id="alamat__4">Cirebon</td>
+            <td class="tab" id="prodi__4">Informatika</td>
+			<td class="tab" id="hapus__4">Hapus</td>
+		</tr>
+		<tr class="wow" id="wow__5">
+            <td class="tab" id="nama__5">Fatin</td>
+            <td class="tab" id="alamat__5">Cirebon</td>
+            <td class="tab" id="prodi__5">Informatika</td>
+			<td class="tab" id="hapus__5">Hapus</td>
+		</tr>
+	 
+   </table>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(document).ready(function(){
+			//alert(0)
+			$('.tab').click(function(){
+				//alert(1)
+				let isi = $(this).text();
+				let tid = $(this).prop('id');
+				let rid = tid.split('__');
+				let id_wow = rid[1];
+				let nama_mahasiswa = $('#nama__'+id_wow).text();
+				
+				if(isi=='Hapus'){
+					let yakin = confirm(`Yakin hapus ${nama_mahasiswa}??`);
+					if(!yakin) return;
+					
+					$('#wow__'+id_wow).fadeOut();
+				
+				}
+				else{
+					alert('Belum ada aksi')
+				}
+			})
+		})
+	
+	</script>
+</body>
+</html>
